@@ -77,7 +77,7 @@ def send_discord_alert(webhook_url, message):
         if response.status_code == 204:
             st.success("Discord alert sent successfully!")
         else:
-            st.error(f"❌ Failed to send Discord alert: {response.text}")
+            st.error(f"Failed to send Discord alert: {response.text}")
     except Exception as e:
         st.error(f"Discord error: {str(e)}")
 
